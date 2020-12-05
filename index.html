@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NVP</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script href="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="top row">
+            <div class="col-3">
+                <img src="images/logo.jpg" alt="National Election Commission" />
+            </div>
+            <div class="col-3 align-self-center">
+                <h1>राष्ट्रीय मतदाता <br>सेवा पोर्टल</h1>
+            </div>
+            <div class="col-3 align-self-center">
+                <h2>INDIAN VOTERS' SERVICE<br>DEMO PORTAL</h2>
+            </div>
+            <div class="col-3">
+                <img src="images/logo2.png" alt="register to vote" />
+            </div>
+        </div>
+
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline">
+                <button class="btn btn-sm btn-dark btn-large" type="button">A+</button>
+                <button class="btn btn-sm btn-dark" type="button">A-</button>
+            </form>
+            <span class="navbar-text">
+                <div class="input-group-append align-items-center">
+                    Language:&nbsp;
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>English</option>
+                        <option>Hindi</option>
+                    </select>
+                </div>
+            </span>
+        </nav>
+    </header>
+
+
+    <section class="main">
+        <form>
+            <div class="container border" style="background-color: gray;">
+                <p>Note: Fields marked with asterisks(<span style="color: red;">*</span>) are mandatory</p>
+                <div class="row headlines" style="background-color: rgb(83, 75, 75);">
+                    Type 6 <br> [See rule 13(1) and 26]
+                </div>
+                <div class="row headlines" style="background-color: rgb(179, 52, 52);">
+                    Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other constituency from any one constituency
+                </div>
+                <div class="container">
+                    In service
+                    <br> Electoral Registration Officer,
+                </div>
+                <div class="container" style="margin: 5px;">
+                    <div class="row">
+                        <div class="col-md-2 offset-md-1">
+                            <div class="input-group-append align-items-center">
+                                State:&nbsp;
+                                <select class="form-control form-control-sm" value="select" required>
+                                <option>Select</option>
+                            </select>
+                            </div>
+
+                        </div>
+                        <div class="col-md-2 offset-md-2">
+                            <div class="input-group-append align-items-center">
+                                District&nbsp;<select class="form-control form-control-sm">
+                                <option>Select</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-1">
+                            <div class="input-group-append align-items-center">
+
+                                Legislative Assembly / Parlimentary / constituency &nbsp;<select required class="form-control form-control-sm">
+                                <option>Select</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    I request that my name be included in electoral rolls for all the aforesaid areas.
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-1">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">1st time voter</label>
+                            </div>
+                        </div>
+                        <div class="col-md-8 offset-md-1">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">due to transfer from other meeting area</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="container">
+                    Below are specifications in support of my claim to be included in the electoral rolls.
+                </div>
+                <div class="row headlines" style="background-color: rgb(179, 52, 52);">
+                    Mandatory specifications
+                </div>
+                <form>
+                    <div class="container" style="margin-left: 20px;margin-top:10px">
+                        <!-- name -->
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label ">(A) Name</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In English)" Required>
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                            </div>
+                        </div>
+                        <!-- sur name -->
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label ">(B) Sur Name</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                            </div>
+                        </div>
+                        <!-- relative's name -->
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label ">(C) Name of the applicant's relative </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                            </div>
+                        </div>
+                        <!-- nickname -->
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label ">Nickname of the applicant's relative </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                            </div>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                            </div>
+                            <div class="col-sm-3">
+                                <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                            </div>
+                        </div>
+                        <!-- type of relation -->
+                        <div class="form-group row">
+                            <label for="relation" class="col-sm-3 col-form-label ">(D) Type of the relationship</label>
+                            <div class="col-sm-3">
+                                <div class="input-group-append align-items-center">
+                                    <select class="form-control form-control-sm" required>
+            <option>Select</option>
+    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Age -->
+                        <div class="form-group row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            </div>
+
+                            <label class="col-sm-3 col-form-label ">(E) Age [on January 1 of the current calender] *</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="input-group-append align-items-center">
+                                    <select class="form-control form-control-sm">
+            <option>Year</option>
+    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="input-group-append align-items-center">
+                                    <select class="form-control form-control-sm">
+            <option>Month</option>
+    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <h5>Or</h5>
+
+                        <div class="form-group row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            </div>
+                            <label class="col-sm-4 col-form-label ">(F) Date of birth (in the form of day/ month/ year)</label>
+                            <div class="col-sm-5">
+                                <input type="date" required>
+                            </div>
+                        </div>
+                        <!-- Gender -->
+                        <div class="form-group row">
+                            <label for="relation" class="col-sm-3 col-form-label ">(G) Applicant's gender *</label>
+                            <div class="col-sm-3">
+                                <div class="input-group-append align-items-center">
+                                    <select class="form-control form-control-sm" required>
+            <option>Select</option>
+            <option>Male</option>
+            <option>Female</option>
+    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row headlines" style="background-color: rgb(179, 52, 52);">
+                    (H) Current address, whose applicant is nominally resident
+                </div>
+                <form class="offset-md-1 mt-3">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label ">House No. </label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label ">Street/Area/Location</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label ">City / Village</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label ">Post Office</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In Hindi)">
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-primary mb-2">Confirm</button>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label ">Pincode</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" required placeholder="     (In English)">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="relation" class="col-sm-3 col-form-label ">State / Union Territory</label>
+                        <div class="col-sm-3">
+                            <div class="input-group-append align-items-center">
+                                <select class="form-control form-control-sm" required>
+                                <option>Select</option>
+                        </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="relation" class="col-sm-3 col-form-label ">District</label>
+                        <div class="col-sm-3">
+                            <div class="input-group-append align-items-center">
+                                <select class="form-control form-control-sm" required>
+                                <option>Select</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label ">Family / Neighbour EPIC no.</label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="     (In English)">
+                        </div>
+                    </div>
+                    <hr>
+                </form>
+                <!--  -->
+                <div class="row headlines" style="background-color: rgb(179, 52, 52);">
+                    Optional specialties
+                </div>
+                <form class="offset-md-1 mt-2">
+                    <div class="form-group row">
+                        <label for="formGroupExampleInput2" class="col-12">(T) Disablity (if any)</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Visual impairment</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">Speech and hear impairment</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">Motion Disabling</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">other</label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label ">(Th)Email ID (optional) </label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="     (In English)">
+                        </div>
+
+
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label ">(D) Mobile number(optional) </label>
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control form-control-sm" placeholder="  +91 ">
+                        </div>
+                    </div>
+                </form>
+                <!--    -->
+                <div class="row headlines" style="background-color: rgb(179, 52, 52);">
+                    Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB) &nbsp;&nbsp;&nbsp;<a href="#">List of supported documents</a>
+                </div>
+                <!--  -->
+                <form class="offset-md-1">
+                    <div class="input-group  mb-3 mt-2 row ">
+                        <div class="align-self-center col-6">
+                            <label for="row1" class="col-md-4 col-form-label">Your Photo </label>
+                            <div class="custom-file col-md-7" id="row1">
+                                <input type="file" class="custom-file-input" required id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 align-self-center">
+                            <label for="formGroupExampleInput2" class="col-4 col-form-label">Age Proof </label>
+                            <div class="custom-file col-md-6" id="row1">
+                                <input type="file" class="custom-file-input" required id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="col-sm-5">Type of document</label>
+                            <div class="col-sm-5">
+                                <div class="input-group-append align-items-center">
+                                    <select class="form-control form-control-sm">
+                                    <option>Select</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 align-self-center">
+                            <label for="formGroupExampleInput2" class="col-4 col-form-label">Address Proof </label>
+                            <div class="custom-file col-md-6" id="row1">
+                                <input type="file" required class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="col-sm-5">Type of Document</label>
+                            <div class="col-sm-5">
+                                <div class="input-group-append align-items-center">
+                                    <select class="form-control form-control-sm">
+                                    <option>Select</option>
+                                </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                <!--  -->
+                <div class="row headlines" style="background-color: rgb(179, 52, 52);">
+                    Declaration
+                </div>
+                <div class="container mt-2">
+                    I declare I declare that according to my best knowledge and belief
+                    <br>I am a citizen of India and of my birth;
+                    <form class="offset-md-1">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label ">City / Village </label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control form-control-sm" placeholder="     (In English)">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <label class="col-sm-2 ">Select State</label>
+                                <div class="col-sm-2">
+                                    <div class="input-group-append align-items-center">
+                                        <select class="form-control form-control-sm" required>
+                                        <option>Select</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <label class="col-sm-1 offset-sm-1">District</label>
+                                <div class="col-sm-2">
+                                    <div class="input-group-append align-items-center">
+                                        <select class="form-control form-control-sm" required>
+                                        <option>Select</option>
+                                    </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label ">Date </label>
+                            <div class="col-sm-3">
+                                <input type="date" required>
+                            </div>
+                        </div>
+                    </form>
+                    I have not applied to include my name in the electoral roll for any other constituency;
+                    <div class="offset-md-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option1">
+                            <label for="exampleRadios2">(iv) My name has not been already included in the electoral roll for this or any other assembly / parliamentary constituency</label>
+                        </div>
+                        Or
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option1">
+                            <label for="exampleRadios2">My name would have been included in electoral rolls of the State's constituency, in which I was already residing in the address mentionedbelow, and if so, then I request that it be removed from that electoral roll. Go.</label>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label class="col-sm-1 col-form-label offset-sm-2">Location</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control form-control-sm" required placeholder="  ">
+                    </div>
+                    <label class="col-sm-1 col-form-label offset-sm-1">Date </label>
+                    <div class="col-sm-3">
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="container">
+                    I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false or I do not believe in being true, the People's Representation Act, 1950 (43 of 1950 ) Is punishable under section 31
+                </div>
+                <div class="offset-md-1" style="margin-top:15px">
+                    <label class="col-sm-1">
+                    Captcha
+                </label>
+                    <input class="form-control-sm col-sm-2 ml-3" type="text" placeholder="Example Captcha" readonly>
+                    <input class="form-control-sm col-sm-2 ml-4" type="text" required placeholder="">
+                </div>
+                <div class="row justify-content-md-center mt-2 pb-3">
+                    <div class="col-1">
+                        <button type="button" class="btn btn-primary">Reset</button>
+                    </div>
+                    <div class="col-1">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+
+    <footer style="background-color: black;padding:30px;margin-top: 5px;">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-auto text-white">
+                    Copyright © 2019 Suven Consultants and Technology Pvt. Ltd.
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>

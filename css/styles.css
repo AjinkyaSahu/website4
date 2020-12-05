@@ -1,0 +1,36 @@
+.top {
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+.top img {
+    width: 80%;
+    margin: 5%;
+    height: 120px;
+}
+
+.navbar {
+    margin: 1%;
+}
+
+.navbar button {
+    margin: 5px;
+    padding: 5px;
+    width: 50px;
+}
+
+.main h3 {
+    margin: 5%
+}
+
+.main .container p {
+    margin-left: 5%;
+    margin-bottom: 0px;
+    font-size: 1.4em;
+    color: brown;
+}
+
+.headlines {
+    padding: 10px;
+    margin: 0 1%;
+    font-size: 1.2em;
+}
